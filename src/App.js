@@ -14,7 +14,7 @@ function App() {
   }
 
   return (
-    <header style={{ alignItems: 'center' }}>
+    <header style={{ background: 'green' }}>
       <h1>App</h1>
       <input
         onChange={changeTodo}
