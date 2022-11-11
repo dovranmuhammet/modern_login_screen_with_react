@@ -12,12 +12,14 @@ export default function App() {
     setCount(count - 1)
   }
 
+  const data = elems.map((elems) => <div>{elem.name}</div>)
+
   return (
     <div className='app'>
       <h1>Counter: {count}</h1>
       <button onClick={plusCount}>Increase</button>
       <button onClick={minusCount}>Decrease</button>
-      <h1>Todo List</h1>
+      <h1>Todo List {elem}</h1>
       <button>Add</button>
     </div>
   )
