@@ -4,6 +4,8 @@ import { data } from './data'
 export default function App() {
   const [count, setCount] = useState(0)
 
+  const [name, setName] = useState('David')
+
   const plusCount = () => {
     setCount(count + 1)
   }
@@ -12,15 +14,13 @@ export default function App() {
     setCount(count - 1)
   }
 
-  const data = elems.map((elems) => <div>{elem.name}</div>)
-
   return (
     <div className='app'>
       <h1>Counter: {count}</h1>
       <button onClick={plusCount}>Increase</button>
       <button onClick={minusCount}>Decrease</button>
-      <h1>Todo List {elem}</h1>
-      <button>Add</button>
+      <h1>{name}</h1>
+      <button onClikc={setName('Myrat')}>Add</button>
     </div>
   )
 }
