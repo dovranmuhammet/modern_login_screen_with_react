@@ -19,8 +19,8 @@ export default function App() {
       <h1>Counter: {count}</h1>
       <button onClick={plusCount}>Increase</button>
       <button onClick={minusCount}>Decrease</button>
-      <h1>{name}</h1>
-      <button onClikc={setName('Myrat')}>Add</button>
+      <h1 onClick={() => setName('Myrat')}>{name}</h1>
+      <button>Add</button>
     </div>
   )
 }
